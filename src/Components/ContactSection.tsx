@@ -1,4 +1,4 @@
-import emailjs from '@emailjs/browser';
+import emailjs from "@emailjs/browser";
 import { SiGmail } from "react-icons/si";
 import {
   FaInstagram,
@@ -9,44 +9,60 @@ import {
 import { cn } from "../Lib/Utils";
 import { BsFillSendFill } from "react-icons/bs";
 import { useToast } from "../hooks/use-toasts";
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
+import { ToastAction } from "@radix-ui/react-toast";
 
 export const ContactSection = () => {
-    const { toast } = useToast();
-    const form = useRef<HTMLFormElement>(null);
-    const [isSubmitting, setIsSubmitting] = useState(false)
+  const { toast } = useToast();
+  const form = useRef<HTMLFormElement>(null);
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
-    const handleSubmit = (e: { preventDefault: () => void; }) => {
-        e.preventDefault()
+  useEffect(() => {
+  const handleToastClose = () => {
+    console.log("Toast closed or dismissed."); // or perform another action
+  };
 
-        setIsSubmitting(true)
+  // Add a basic listener (simulated for demonstration, depending on the toast lib you use)
+  window.addEventListener("toastClosed", handleToastClose);
 
-         setTimeout(() => {
-             toast({
-                title: "Message Sent!",
-                description: "Thank you for reaching out, i'll get back to you very soon"
-             });
-             setIsSubmitting(false);
-         }, 1500);
+  return () => {
+    window.removeEventListener("toastClosed", handleToastClose);
+  };
+}, []);
 
-         emailjs.sendForm(
-            'service_n163bpn',
-            'template_qyqpzy2',
-            form.current!,
-            'Giwir94S-ALfMoe0M'
-         )
-         .then(
+  const handleSubmit = (e: { preventDefault: () => void }) => {
+    e.preventDefault();
+
+    setIsSubmitting(true);
+
+    setTimeout(() => {
+      toast({
+        title: "Message Sent!",
+        description:
+          "Thank you for reaching out, i'll get back to you very soon",
+        action: <ToastAction altText="Dismiss"></ToastAction>,
+      });
+      setIsSubmitting(false);
+    }, 1500);
+
+    emailjs
+      .sendForm(
+        "service_n163bpn",
+        "template_qyqpzy2",
+        form.current!,
+        "Giwir94S-ALfMoe0M"
+      )
+      .then(
         () => {
           setIsSubmitting(false);
           form.current?.reset();
         },
         (error) => {
-          console.error('FAILED...', error);
+          console.error("FAILED...", error);
           setIsSubmitting(false);
         }
       );
-    }
-
+  };
 
   return (
     <section id="contact" className="py-24 px-4 relative bg-secondary/30">
@@ -102,21 +118,24 @@ export const ContactSection = () => {
                 <h4 className="font-medium mb-4">Connect with Me</h4>
                 <div className="flex space-x-4 justify-center">
                   <a href="#" target="_blank">
-                    <FaLinkedin className="w-6 h-6 hover:text-primary"/>
+                    <FaLinkedin className="w-6 h-6 hover:text-primary" />
                   </a>
 
                   <a href="#" target="_blank">
-                    <FaInstagram className="w-6 h-6 hover:text-primary"/>
+                    <FaInstagram className="w-6 h-6 hover:text-primary" />
                   </a>
 
                   <a href="#" target="_blank">
-                    <FaSquareXTwitter className="w-6 h-6 hover:text-primary"/>
+                    <FaSquareXTwitter className="w-6 h-6 hover:text-primary" />
                   </a>
                 </div>
               </div>
             </div>
           </div>
-          <div className="bg-card p-8 rounded-lg shadow-xs" onSubmit={handleSubmit}>
+          <div
+            className="bg-card p-8 rounded-lg shadow-xs"
+            onSubmit={handleSubmit}
+          >
             <h3 className="text-2xl font-semibold mb-6">Send a Message</h3>
 
             <form ref={form} className="space-y-6">
@@ -174,7 +193,6 @@ export const ContactSection = () => {
                 disabled={isSubmitting}
                 className={cn(
                   "cosmic-button bg-purple-900 w-full flex items-center justify-center gap-2"
-
                 )}
               >
                 {isSubmitting ? "sending..." : "Send Message"}
