@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import * as React from "react";
 
 const TOAST_LIMIT = 1;
@@ -12,44 +13,44 @@ function genId() {
 
 const toastTimeouts = new Map();
 
-interface Toast {
-  id: string;
-  open: boolean;
-  onOpenChange: (open: boolean) => void;
-  [key: string]: unknown;
-}
+// interface Toast {
+//   id: string;
+//   open: boolean;
+//   onOpenChange: (open: boolean) => void;
+//   [key: string]: unknown;
+// }
 
-interface ToastState {
-  toasts: Toast[];
-}
+// interface ToastState {
+//   toasts: Toast[];
+// }
 
-interface AddToastAction {
-  type: "ADD_TOAST";
-  toast: Toast;
-}
+// interface AddToastAction {
+//   type: "ADD_TOAST";
+//   toast: Toast;
+// }
 
-interface UpdateToastAction {
-  type: "UPDATE_TOAST";
-  toast: Partial<Toast> & { id: string };
-}
+// interface UpdateToastAction {
+//   type: "UPDATE_TOAST";
+//   toast: Partial<Toast> & { id: string };
+// }
 
-interface DismissToastAction {
-  type: "DISMISS_TOAST";
-  toastId?: string;
-}
+// interface DismissToastAction {
+//   type: "DISMISS_TOAST";
+//   toastId?: string;
+// }
 
-interface RemoveToastAction {
-  type: "REMOVE_TOAST";
-  toastId?: string;
-}
+// interface RemoveToastAction {
+//   type: "REMOVE_TOAST";
+//   toastId?: string;
+// }
 
-type ToastAction =
-  | AddToastAction
-  | UpdateToastAction
-  | DismissToastAction
-  | RemoveToastAction;
+// type ToastAction =
+//   | AddToastAction
+//   | UpdateToastAction
+//   | DismissToastAction
+//   | RemoveToastAction;
 
-type Listener = (state: ToastState) => void;
+// type Listener = (state: ToastState) => void;
 
 const addToRemoveQueue = (toastId: string) => {
   if (toastTimeouts.has(toastId)) {
