@@ -161,9 +161,6 @@
   border: 2px solid transparent;
 }
 }
-.cosmic-button:active {
-  transform: scale(0.95);
-}
 
 .star {
   position: absolute;
