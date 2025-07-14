@@ -48,7 +48,7 @@ export const SkillSection = () => {
     <section id="skills" className="py-24 px-4 relative bg-secondary/30">
       <div className="container mx-auto max-w-5xl">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
-          My <span className="text-foreground .dark:text-primary">Skills</span>
+          My <span className="text-foreground dark:text-primary">Skills</span>
         </h2>
 
         <div className="flex flex-wrap justify-center gap-4 mb-7">
@@ -58,7 +58,7 @@ export const SkillSection = () => {
               onClick={() => setSkillCategory(category)}
               className={`px-3 py-1 rounded-full transition-colors duration-300 ${
                 skillCategory === category
-                  ? " bg-blue-700 .dark:bg-purple-900 text-white"
+                  ? " bg-blue-700 dark:bg-purple-900 text-white"
                   : "bg-secondary text-muted-foreground hover:bg-primary/10"
               }`}
             >

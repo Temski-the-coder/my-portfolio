@@ -37,7 +37,7 @@ export const NavBar = () => {
             <h1 className="font-bold text-glow text-foreground text-3xl">
               T.O.M
               </h1>
-               <span className="text-primary">Portfolio</span>
+               <span className="text-purple-900 dark:text-primary">Portfolio</span>
             </div>
         </a>
 

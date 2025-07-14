@@ -8,7 +8,7 @@ export const AboutMe = () => {
       {""}
       <div className="container mx-auto max-w-5xl">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
-          About <span className="text-blue-600 .dark:text-primary">Me</span>
+          About <span className="text-blue-600 dark:text-primary">Me</span>
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
@@ -35,7 +35,7 @@ export const AboutMe = () => {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center">
-              <a href="#contact" className=" bg-amber-950 text-foreground dark:cosmic-button">
+              <a href="#contact" className="bg-foreground text-foreground dark:cosmic-button">
                 {""}
                 Get in Touch
               </a>
@@ -53,7 +53,7 @@ export const AboutMe = () => {
             <div className="gradient-border p-6 card-hover">
               <div className="flex items-start gap-4">
                 <div className="p-3 rounded-full bg-primary/10">
-                  <IoIosCode className="w-6 h-6 text-foreground .dark:text-primary" />
+                  <IoIosCode className="w-6 h-6 text-foreground dark:text-primary" />
                 </div>
                 <div className="text-left">
                   <h4 className="font-semibold">Web Development</h4>
@@ -68,7 +68,7 @@ export const AboutMe = () => {
             <div className="gradient-border p-6 card-hover">
               <div className="flex items-start gap-4">
                 <div className="p-3 rounded-full bg-primary/10">
-                  <FaUserCircle className="w-6 h-6 text-foreground .dark:text-primary"/>
+                  <FaUserCircle className="w-6 h-6 text-foreground dark:text-primary"/>
                 </div>
                 <div className="text-left">
                   <h4 className="font-semibold">User-Centric Design</h4>
@@ -85,7 +85,7 @@ export const AboutMe = () => {
             <div className="gradient-border p-6 card-hover">
               <div className="flex items-start gap-4">
                 <div className="p-3 rounded-full bg-primary/10">
-                  <GiBriefcase className="w-6 h-6 text-foreground .dark:text-primary"/>
+                  <GiBriefcase className="w-6 h-6 text-foreground dark:text-primary"/>
                 </div>
                 <div className="text-left">
                   <h4 className="font-semibold">Professional Experience</h4>
