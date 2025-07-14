@@ -33,12 +33,12 @@ export const NavBar = () => {
     >
       <div className="container flex items-center justify-around gap-50">
         <a href="" className="font-bold text-xl text-primary flex items-center">
-          <span className="relative z-10 flex items-center gap-2">
-            <span className="font-bold text-glow text-foreground text-3xl">
+          <div className="relative z-10 flex items-center gap-2">
+            <h1 className="font-bold text-glow text-foreground text-3xl">
               T.O.M
-            </span>
-            Portfolio
-          </span>
+              </h1>
+               <span className="text-primary">Portfolio</span>
+            </div>
         </a>
 
         {/* desktop nav */}

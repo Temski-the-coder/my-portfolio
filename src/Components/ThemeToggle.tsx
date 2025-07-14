@@ -32,7 +32,7 @@ export const ThemeToggle = () => {
     <button
       onClick={toggleTheme}
       className="fixed top-5 right-5 z-50 p-2 rounded-full transition-colors duration-300
-      focus:outline-hidden text-3xl mt-2"
+      focus:outline-hidden text-6xl md:text-2xl mt-2 md:mt-0"
     >
       {isDarkMode ? (
         <FaRegMoon className="h-6 w-6 text-gray-300" />
