@@ -16,7 +16,7 @@ export const ContactSection = () => {
     const form = useRef<HTMLFormElement>(null);
     const [isSubmitting, setIsSubmitting] = useState(false)
 
-    const handleSubmit = (e) => {
+    const handleSubmit = (e: { preventDefault: () => void; }) => {
         e.preventDefault()
 
         setIsSubmitting(true)
