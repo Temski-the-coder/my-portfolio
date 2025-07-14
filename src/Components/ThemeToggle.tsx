@@ -35,7 +35,7 @@ export const ThemeToggle = () => {
       focus:outline-hidden"
     >
       {isDarkMode ? (
-        <FaRegMoon className="h-6 w-6 text-blue-950" />
+        <FaRegMoon className="h-6 w-6 text-gray-300" />
       ) : (
         <GoSun className="h-6 w-6 text-amber-300" />
       )}
