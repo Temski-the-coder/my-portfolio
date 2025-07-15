@@ -6,7 +6,7 @@ export const MainComponent = () => {
           <h1 className="text-4xl md:text-6xl font-bold tracking-tight opacity-0 animate-fade-in-delay-1 space-x-2">
             <span className="text-foreground">Hi There,</span>
             <span className="text-primary">My name is Temenu Michael</span>
-            <p className="text-2xl mt-4 font-serif font-light text-foreground">A FullStack Developer who builds amazing functional web applications using react, typescript, and tailwindcss for frontend as well as NodeJs for Backend</p>
+            <p className="text-sm md:text-2xl mt-4 font-serif font-light text-foreground">A FullStack Developer who builds amazing functional web applications using react, typescript, and tailwindcss for frontend as well as NodeJs for Backend</p>
           </h1>
         </div>
         <p className="text-3xl md:text-4xl absolute bottom-1 flex flex-col left-1/2 transform -translate-x-1/2 items-center opacity-0 animate-fade-in-delay-2">
