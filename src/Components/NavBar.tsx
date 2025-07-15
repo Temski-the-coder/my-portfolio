@@ -73,7 +73,7 @@ export const NavBar = () => {
             "transition-all duration-300 md:hidden",
             isOpen
               ? "opacity-100 pointer-events-auto"
-              : "opacity-0 pointer-events-none"
+              : "opacity-100 pointer-events-none"
           )}
         >
           <div className="flex flex-col space-y-8">
