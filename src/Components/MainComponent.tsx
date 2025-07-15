@@ -5,7 +5,7 @@ export const MainComponent = () => {
         <div className="space-y-4">
           <h1 className="text-4xl md:text-6xl font-bold tracking-tight opacity-0 animate-fade-in-delay-1 space-x-2">
             <span className="text-foreground">Hi There,</span>
-            <span className="text-blue-600 dark:text-primary">My name is Michael</span>
+            <span className="text-primary">My name is Temenu Michael</span>
             <p className="text-2xl mt-4 font-serif font-light text-foreground">A FullStack Developer who builds amazing functional web applications using react, typescript, and tailwindcss for frontend as well as NodeJs for Backend</p>
           </h1>
         </div>
