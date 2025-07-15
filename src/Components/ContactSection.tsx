@@ -86,7 +86,7 @@ export const ContactSection = () => {
             <div className="space-y-6 justify-center">
               <div className="flex items-start justify-center space-x-4 mt-15">
                 <div className="p-3 rounded-full bg-purple-700/10 mt-1">
-                  <SiGmail className="text-purple-700" />
+                  <SiGmail className="text-primary" />
                 </div>
                 <div className="mr-7">
                   <h4 className="font-medium">Email</h4>
@@ -101,7 +101,7 @@ export const ContactSection = () => {
 
               <div className="flex items-start justify-center space-x-10 mt-15">
                 <div className="p-3 rounded-full bg-purple-700/10 flex mt-1 justify-start">
-                  <FaPhoneVolume className="text-purple-700" />
+                  <FaPhoneVolume className="text-primary" />
                 </div>
                 <div className="mr-15">
                   <h4 className="font-medium">Phone</h4>
@@ -192,7 +192,7 @@ export const ContactSection = () => {
                 type="submit"
                 disabled={isSubmitting}
                 className={cn(
-                  "cosmic-button bg-purple-900 w-full flex items-center justify-center gap-2"
+                  "cosmic-button w-full flex items-center justify-center gap-2"
                 )}
               >
                 {isSubmitting ? "sending..." : "Send Message"}
