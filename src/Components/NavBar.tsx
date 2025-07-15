@@ -58,7 +58,7 @@ export const NavBar = () => {
         {/* Mobile Nav */}
         <button
           onClick={() => setIsOpen((prev) => !prev)}
-          className="sm:visible md:hidden mb-1 z-50 p-2 text-foreground text-6xl"
+          className="visible md:hidden mb-1 z-50 p-2 text-foreground text-6xl"
           aria-label={isOpen ? "Close menu" : "Open menu"}
         >
           {isOpen ? (

@@ -58,7 +58,7 @@ export const SkillSection = () => {
               onClick={() => setSkillCategory(category)}
               className={`px-3 py-1 rounded-full transition-colors duration-300 ${
                 skillCategory === category
-                  ? " bg-blue-700 dark:bg-purple-900 text-white"
+                  ? " bg-primary text-white"
                   : "bg-secondary text-muted-foreground hover:bg-primary/10"
               }`}
             >
@@ -78,7 +78,7 @@ export const SkillSection = () => {
               </div>
               <div className="w-full h-2 bg-secondary rounded-full overflow-hidden">
                 <div
-                  className="bg-purple-900 h-2 rounded-full origin-left animate-[grow_1.5s_ease-out]"
+                  className="bg-primary h-2 rounded-full origin-left animate-[grow_1.5s_ease-out]"
                   style={{ width: skill.level + "%" }}
                 />
               </div>

@@ -16,14 +16,14 @@ const Home = () => {
         <StarBackground />
         {/* Background Effect */}
         
+         {/* NavBar */}
+        <NavBar />
+        {/* NavBar */}
+        
         {/* Theme toggle */}
         <ThemeToggle />
         {/* Theme toggle */}
        
-        
-        {/* NavBar */}
-        <NavBar />
-        {/* NavBar */}
         
         {/* Main Section */}
           <MainComponent />
