@@ -37,7 +37,7 @@ export const NavBar = () => {
             <h1 className="font-bold text-glow text-foreground text-3xl">
               T.O.M
               </h1>
-               <span className="text-purple-900 dark:text-primary">Portfolio</span>
+               <span className="text-primary">Portfolio</span>
             </div>
         </a>
 
@@ -58,7 +58,7 @@ export const NavBar = () => {
         {/* Mobile Nav */}
         <button
           onClick={() => setIsOpen((prev) => !prev)}
-          className="md:hidden z-50 p-2 text-foreground"
+          className="sm:visible md:hidden mb-1 z-50 p-2 text-foreground text-6xl"
           aria-label={isOpen ? "Close menu" : "Open menu"}
         >
           {isOpen ? (
