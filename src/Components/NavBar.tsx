@@ -66,7 +66,7 @@ export const NavBar = () => {
           ) : (
             <TiThMenu className="text-3xl text-black" />
           )}
-        
+        </button>
         <div
           className={cn(
             "fixed inset-0 bg-background/95 backdrop-blur-md z-40 flex flex-col items-center justify-center",
@@ -89,7 +89,6 @@ export const NavBar = () => {
             ))}
           </div>
         </div>
-        </button>
         {/* Mobile Nav */}
       </div>
     </nav>
