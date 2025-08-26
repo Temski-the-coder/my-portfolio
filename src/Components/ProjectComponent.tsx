@@ -5,12 +5,12 @@ import { IoMdArrowRoundForward } from "react-icons/io";
 const Projects = [
   {
     Id: 1,
-    Title: "Project One",
-    Description: "Project is a work in progress.",
-    Image: "https://via.placeholder.com/150",
-    tags: ["", "", ""],
-    DemoUrl: "#",
-    GitHubUrl: "#",
+    Title: "E-commerce M.E.R.N Website",
+    Description: "M.E.R.N stack e-commerce website.",
+    Image: "src/assets/Ecommerce website screenshot.png",
+    tags: ["React", "TypeScript", "Express.js", "React-Router", "tailwindcss", "Framer Motion"],
+    DemoUrl: "https://mivine-essentials-frontend.vercel.app/",
+    GitHubUrl: "https://github.com/Temski-the-coder/mivine-essentials-frontend.git",
   },
 
   {
