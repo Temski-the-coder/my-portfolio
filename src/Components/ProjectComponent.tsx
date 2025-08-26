@@ -1,21 +1,30 @@
 import { TbExternalLink } from "react-icons/tb";
 import { FaGithub } from "react-icons/fa";
 import { IoMdArrowRoundForward } from "react-icons/io";
+import EcommerceScreenshot from "../assets/Ecommerce website screenshot.png";
 
 const Projects = [
   {
     Id: 1,
     Title: "E-commerce M.E.R.N Website",
     Description: "M.E.R.N stack e-commerce website.",
-    Image:  [
+    Image: [
       {
-        url: "src/assets/Ecommerce website screenshot.png",
+        url: EcommerceScreenshot,
         alt: "E-commerce M.E.R.N Website Screenshot",
-      }
+      },
     ],
-    tags: ["React", "TypeScript", "Express.js", "React-Router", "tailwindcss", "Framer Motion"],
+    tags: [
+      "React",
+      "TypeScript",
+      "Express.js",
+      "React-Router",
+      "tailwindcss",
+      "Framer Motion",
+    ],
     DemoUrl: "https://mivine-essentials-frontend.vercel.app/",
-    GitHubUrl: "https://github.com/Temski-the-coder/mivine-essentials-frontend.git",
+    GitHubUrl:
+      "https://github.com/Temski-the-coder/mivine-essentials-frontend.git",
   },
 
   {
@@ -26,7 +35,7 @@ const Projects = [
       {
         url: "https://via.placeholder.com/150",
         alt: "Project Two Screenshot",
-      }
+      },
     ],
     tags: ["", "", ""],
     DemoUrl: "#",
@@ -41,7 +50,7 @@ const Projects = [
       {
         url: "https://via.placeholder.com/150",
         alt: "Project Three Screenshot",
-      }
+      },
     ],
     tags: ["", "", ""],
     DemoUrl: "#",
