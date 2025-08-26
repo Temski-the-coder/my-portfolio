@@ -7,7 +7,12 @@ const Projects = [
     Id: 1,
     Title: "E-commerce M.E.R.N Website",
     Description: "M.E.R.N stack e-commerce website.",
-    Image: "src/assets/Ecommerce website screenshot.png",
+    Image:  [
+      {
+        url: "src/assets/Ecommerce website screenshot.png",
+        alt: "E-commerce M.E.R.N Website Screenshot",
+      }
+    ],
     tags: ["React", "TypeScript", "Express.js", "React-Router", "tailwindcss", "Framer Motion"],
     DemoUrl: "https://mivine-essentials-frontend.vercel.app/",
     GitHubUrl: "https://github.com/Temski-the-coder/mivine-essentials-frontend.git",
@@ -17,7 +22,12 @@ const Projects = [
     Id: 2,
     Title: "Project Two",
     Description: "Project is a work in progress.",
-    Image: "https://via.placeholder.com/150",
+    Image: [
+      {
+        url: "https://via.placeholder.com/150",
+        alt: "Project Two Screenshot",
+      }
+    ],
     tags: ["", "", ""],
     DemoUrl: "#",
     GitHubUrl: "#",
@@ -27,7 +37,12 @@ const Projects = [
     Id: 3,
     Title: "Project Three",
     Description: "Project is a work in progress.",
-    Image: "https://via.placeholder.com/150",
+    Image: [
+      {
+        url: "https://via.placeholder.com/150",
+        alt: "Project Three Screenshot",
+      }
+    ],
     tags: ["", "", ""],
     DemoUrl: "#",
     GitHubUrl: "#",
@@ -57,8 +72,8 @@ export const ProjectComponent = () => {
             >
               <div className="h-40 overflow-hidden">
                 <img
-                  src={project.Image}
-                  alt={project.Title}
+                  src={project.Image[0].url}
+                  alt={project.Image[0].alt}
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />
               </div>
