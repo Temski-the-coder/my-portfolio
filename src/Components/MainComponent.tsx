@@ -8,7 +8,7 @@ export const MainComponent = () => {
         <div className="space-y-6 md:space-y-4">
           <h1 className="text-4xl md:text-6xl font-bold tracking-tight opacity-0 animate-fade-in-delay-1 space-x-2">
             <span className="text-foreground">Hi there,</span>
-            <span className="text-primary"><Typewriter words={['My name is Temenu Michael']} loop={1} cursor cursorStyle="_" typeSpeed={70} deleteSpeed={50} delaySpeed={1000}/></span>
+            <span className="text-primary"><Typewriter words={['My name is Temenu Michael']} loop={0} cursor cursorStyle="_" typeSpeed={70} deleteSpeed={50} delaySpeed={1000}/></span>
             
             <p className="text-base md:text-2xl mt-4 font-serif font-light text-foreground">A FullStack Developer who builds amazing functional web applications using react, typescript, and tailwindcss for frontend as well as NodeJs for Backend</p>
           </h1>
