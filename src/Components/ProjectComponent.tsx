@@ -1,7 +1,7 @@
 import { TbExternalLink } from "react-icons/tb";
 import { FaGithub } from "react-icons/fa";
 import { IoMdArrowRoundForward } from "react-icons/io";
-import EcommerceScreenshot from "../assets/Ecommerce website screenshot.png";
+import EcommerceScreenshot from "../assets/my-ecommerce-web.png";
 
 const Projects = [
   {
@@ -22,9 +22,9 @@ const Projects = [
       "tailwindcss",
       "Framer Motion",
     ],
-    DemoUrl: "https://mivine-essentials-frontend.vercel.app/",
+    DemoUrl: "https://mivine-essentials.vercel.app/",
     GitHubUrl:
-      "https://github.com/Temski-the-coder/mivine-essentials-frontend.git",
+      "https://github.com/Temski-the-coder/Mivine-Essentials",
   },
 
   {
