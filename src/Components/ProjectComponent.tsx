@@ -2,6 +2,7 @@ import { TbExternalLink } from "react-icons/tb";
 import { FaGithub } from "react-icons/fa";
 import { IoMdArrowRoundForward } from "react-icons/io";
 import EcommerceScreenshot from "../assets/my-ecommerce-web.png";
+import advice from "../assets/advice-generator-screenshot.png"
 
 const Projects = [
   {
@@ -29,17 +30,17 @@ const Projects = [
 
   {
     Id: 2,
-    Title: "Project Two",
-    Description: "Project is a work in progress.",
+    Title: "T.O.M Codes Advice Generator App",
+    Description: "A website that generates special advice.",
     Image: [
       {
-        url: "https://via.placeholder.com/150",
-        alt: "Project Two Screenshot",
+        url: advice,
+        alt: "Advice Generator website",
       },
     ],
-    tags: ["", "", ""],
-    DemoUrl: "#",
-    GitHubUrl: "#",
+    tags: ["React", "Typescript", "Tailwindcss", "adviceSlipAPI"],
+    DemoUrl: "https://tom-advice-generator-app.vercel.app/",
+    GitHubUrl: "https://github.com/Temski-the-coder/advise-app.git",
   },
 
   {
