@@ -2,7 +2,8 @@ import { TbExternalLink } from "react-icons/tb";
 import { FaGithub } from "react-icons/fa";
 import { IoMdArrowRoundForward } from "react-icons/io";
 import EcommerceScreenshot from "../assets/my-ecommerce-web.png";
-import advice from "../assets/advice-generator-screenshot.png"
+import advice from "../assets/advice-generator-screenshot.png";
+import MealsNaija from "../assets/mealsnaija-img.png";
 
 const Projects = [
   {
@@ -45,17 +46,17 @@ const Projects = [
 
   {
     Id: 3,
-    Title: "Project Three",
-    Description: "Project is a work in progress.",
+    Title: "MealsNaija",
+    Description: "A website for a private chef in Nigeria.",
     Image: [
       {
-        url: "https://via.placeholder.com/150",
-        alt: "Project Three Screenshot",
+        url: MealsNaija,
+        alt: "MealsNaija website",
       },
     ],
-    tags: ["", "", ""],
-    DemoUrl: "#",
-    GitHubUrl: "#",
+    tags: ["React", "javascript", "Tailwindcss", "Framer Motion", "EmailJS", "css", "Toaster"],
+    DemoUrl: "https://mealsnaija.vercel.app",
+    GitHubUrl: "https://github.com/Temski-the-coder/mealsnaija.git",
   },
 ];
 
