@@ -3,7 +3,7 @@ import { FaGithub } from "react-icons/fa";
 import { IoMdArrowRoundForward } from "react-icons/io";
 import EcommerceScreenshot from "../assets/my-ecommerce-web.png";
 import advice from "../assets/advice-generator-screenshot.png";
-import MealsNaija from "../assets/mealsnaija-img.png";
+import MealsNaija from "../assets/MN.png";
 
 const Projects = [
   {
